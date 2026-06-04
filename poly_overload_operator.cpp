@@ -40,12 +40,14 @@ void operator <<(std::ostream& COUT, Base& obj) {
 
 int main() {
     Base obj1("Anthony" , 30);
+    Base obj4("John", 25);
     Base obj2(10, 20);
     Base obj3(15, 25);
 
     //this is within the class
     // i.e object << cout
-    //obj1 << std::cout;
+    obj4 << std::cout;
+    obj1 << std::cout;
 
     //this is outside the class
     // i.e cout << object
@@ -53,8 +55,8 @@ int main() {
 
 
     //overloading the addition operator function outside the class
-    int obj4 = obj2 + obj3; 
-    std::cout << "The result of the addition operator function is: " << obj4 << std::endl;
+    //int obj4 = obj2 + obj3; 
+    //std::cout << "The result of the addition operator function is: " << obj4 << std::endl;
 
     return 0;
 }
